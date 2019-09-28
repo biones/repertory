@@ -1,29 +1,11 @@
-# repertory
+#レパートリー管理
 
-## Project setup
-```
-npm install
-```
+**特徴**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
++ リクエストの受付  
++ リストごとのtotaltimeの表示  
 
-### Compiles and minifies for production
-```
-npm run build
-```
+npm,vueをinstallしfirebase上に設置してください。
+機能要望受け付けます。
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://repertory-b7e36.web.app/8RmWvECvUUUd72HmuXDfwLAJ07r1/default
