@@ -1,0 +1,19 @@
+service cloud.firestore {
+  match /databases/{database}/documents/users/{uid} {
+      allow read:if true;
+      allow write:if request.auth.uid == uid;
+      match /repertory/{repid=**}{
+        allow read:if true;
+        allow write:if request.auth.uid == uid;
+      }
+      match /musiclist/{listid}{
+        allow read:if true;
+        allow write:if request.auth.uid == uid;
+      }
+      match  /messages/{mid}{
+        allow read:if request.auth.uid == uid;
+        allow create:if true;
+      }
+
+  }
+}
