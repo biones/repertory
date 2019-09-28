@@ -1,18 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header></Header>
+    <router-view></router-view>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import firebase from 'firebase'
+import ImportCsv from './components/importcsv.vue'
+import MusicList from './components/musiclist.vue'
+import Header from './components/Header.vue'
+//import AudienceView from '@/components/List.vue'
+
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
+    ImportCsv,
+    MusicList,
+    Header
+  },
+  data: () => ({
+    //db:firebase.firestore(),
+  })
+  ,
 }
 </script>
 
