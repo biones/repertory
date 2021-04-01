@@ -36,27 +36,7 @@ Vue.use(VueMaterial)
 Vue.config.productionTip = false
 
 
-// Initialize Firebase
-/*
-var config2 = {
-        apiKey: process.env.FIRE_BASE.API_KEY,
-        authDomain: process.env.AUTH_DOMAIN,
-        databaseURL: process.env.FIRE_BASE.DATABASE_URL,
-        projectId: process.env.FIRE_BASE.PROJECT_ID,
-        storageBucket: process.env.STORAGE_BUCKET,
-        messagingSenderId: process.env.MESSAGING_SENDERID,
-};
-*/
 
-const  config = {
-  apiKey: "AIzaSyDZAr_qqnU6kO6VaZKkl1SxhP_9ul4gCvk",
-  authDomain: "repertory-b7e36.firebaseapp.com",
-  databaseURL: "https://repertory-b7e36.firebaseio.com",
-  projectId: "repertory-b7e36",
-  storageBucket: "repertory-b7e36.appspot.com",
-  messagingSenderId: "589386177148",
-  appId: "1:589386177148:web:e3540ee35a17e3db"
-};
 
 firebase.initializeApp(config);
 
